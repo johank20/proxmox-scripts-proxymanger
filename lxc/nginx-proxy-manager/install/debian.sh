@@ -109,8 +109,8 @@ runcmd 'wget $WGETOPT -O ./_latest_release $NPMURL/releases/latest'
 _latest_version=$(basename $(cat ./_latest_release | grep -wo "NginxProxyManager/.*.tar.gz") .tar.gz | cut -d'v' -f2)
 
 # Download nginx-proxy-manager source
-log "Downloading NPM v$_latest_version"
-runcmd 'wget $WGETOPT -c $NPMURL/archive/refs/v$_latest_version.tar.gz -O - | tar -xz'
+log "Downloading NPM v2.9.18"
+runcmd 'wget $WGETOPT -c $NPMURL/archive/v2.9.18.tar.gz -O - | tar -xz'
 cd ./nginx-proxy-manager-$_latest_version
 
 log "Setting up enviroment"
