@@ -110,7 +110,7 @@ _latest_version="2.9.18"
 
 # Download nginx-proxy-manager source
 log "Downloading NPM v2.9.18"
-cd ./nginx-proxy-manager-2.9.18
+cd /tmp/nginx-proxy-manager-2.9.18
 
 log "Setting up enviroment"
 # Crate required symbolic links
