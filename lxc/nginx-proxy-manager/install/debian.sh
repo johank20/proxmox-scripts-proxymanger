@@ -110,8 +110,6 @@ _latest_version=$(basename $(cat ./_latest_release | grep -wo "NginxProxyManager
 
 # Download nginx-proxy-manager source
 log "Downloading NPM v2.9.18"
-runcmd 'wget $WGETOPT -c $NPMURL/archive/v2.9.18.tar.gz -O -'
-runcmd 'tar -xvzf v2.9.18.tar.gz'
 cd ./nginx-proxy-manager-$_latest_version
 
 log "Setting up enviroment"
